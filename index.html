@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card | flow">
+        <div class="wrapper | flex-group txt-neutral-1 bg-primary-1">
+          <p>My balance <span class="fs-500 fw-bold">$921.48</span></p>
+
+          <img src="images/logo.svg" alt="" />
+        </div>
+
+        <div
+          class="wrapper | bg-neutral-1 padding-inline"
+          style="padding-block: 0"
+        >
+          <div class="padding-block flow">
+            <h2 class="fs-500 | fw-bold txt-neutral-4">
+              Spending - Last 7 days
+            </h2>
+
+            <canvas id="chart" class="chart"></canvas>
+          </div>
+
+          <div class="flex-group padding-block border-top">
+            <p>
+              Total this month
+              <span class="fs-600 fw-bold txt-neutral-4">$478.33</span>
+            </p>
+
+            <p class="txt-right">
+              <span class="fw-bold txt-neutral-4">+2.4%</span> from last month
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

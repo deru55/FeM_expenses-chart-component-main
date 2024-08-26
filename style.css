@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  display: block;
+}
+
+:root {
+  --ff-default: "DM Sans", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --clr-primary-1: hsl(10, 79%, 65%);
+  --clr-primary-2: hsl(186, 34%, 60%);
+
+  --clr-neutral-1: hsl(33, 100%, 98%);
+  --clr-neutral-2: hsl(27, 66%, 92%);
+  --clr-neutral-3: hsl(28, 10%, 53%);
+  --clr-neutral-4: hsl(25, 47%, 15%);
+}
+
+/* utilities classes */
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1.5rem);
+}
+
+.fw-bold {
+  font-weight: var(--fw-700);
+}
+
+.txt-neutral-1 {
+  color: var(--clr-neutral-1);
+}
+
+.txt-neutral-4 {
+  color: var(--clr-neutral-4);
+}
+
+.bg-primary-1 {
+  background-color: var(--clr-primary-1);
+}
+
+.bg-neutral-1 {
+  background-color: var(--clr-neutral-1);
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.fs-500 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.fs-600 {
+  font-size: clamp(1.875rem, 8vw, 3rem);
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.padding-block {
+  padding-block: var(--padding);
+}
+
+.border-top {
+  border-top: 1px solid var(--clr-neutral-2);
+}
+
+body {
+  font-family: var(--ff-default);
+  font-size: clamp(0.85rem, 4vw, 1.125rem);
+  font-weight: var(--fw-400);
+  color: var(--clr-neutral-3);
+  background-color: var(--clr-neutral-2);
+  padding-inline: 1rem;
+
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+.wrapper {
+  --padding: clamp(1.25rem, 5vw, 2rem);
+
+  padding: var(--padding);
+  border-radius: 1rem;
+}
+
+.chart {
+  width: 100% !important;
+}
